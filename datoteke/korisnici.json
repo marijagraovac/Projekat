@@ -1,0 +1,36 @@
+[
+  {
+    "korisnicko_ime": "mgraovac",
+    "lozinka": "marijagraovac",
+    "ime": "Marija",
+    "prezime": "Graovac",
+    "tip_korisnika": "Administrator"
+  },
+  {
+    "korisnicko_ime": "random1",
+    "lozinka": "randomlozinka",
+    "ime": "Milica",
+    "prezime": "Ilić",
+    "tip_korisnika": "Prodavac"
+  },
+  {
+    "korisnicko_ime": "random2",
+    "lozinka": "randomlozinka2",
+    "ime": "Dušan",
+    "prezime": "Jovanović",
+    "tip_korisnika": "Prodavac"
+  },
+  {
+    "korisnicko_ime": "random3",
+    "lozinka": "randomlozinka3",
+    "ime": "Teodora",
+    "prezime": "Ivanović",
+    "tip_korisnika": "Menadžer"
+  },
+  {
+    "korisnicko_ime": "random4",
+    "lozinka": "randomlozinka4",
+    "ime": "Strahinja",
+    "prezime": "Prodavac"
+  }
+]

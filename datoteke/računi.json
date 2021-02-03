@@ -1,0 +1,117 @@
+[
+  {
+    "id": 1,
+    "Prodavac": "random1",
+    "Datum i vreme": "2021-01-19T13:34:13",
+    "Knjige": [
+      {
+        "šifra": "276387",
+        "naslov": "Ime Ruže",
+        "isbn": "978-86-10-01213-2",
+        "autor": "Umberto Eko",
+        "izdavač": "Vulkan",
+        "broj strana": 534,
+        "godina": 1980,
+        "cena": 1266.50,
+        "kategorija": "Misterija"
+      },
+      {
+        "šifra": "339741",
+        "naslov": "Kudžo",
+        "isbn": "978-86-10-02993-2",
+        "autor": "Stiven King",
+        "izdavač": "Vulkan izdavaštvo",
+        "broj strana": 335,
+        "godina": 1981,
+        "cena": 1266.50,
+        "kategorija": "Horor"
+      }
+      ],
+    "Ukupno": 2533
+  },
+  {
+    "id": 2,
+    "Prodavac": "random2",
+    "Datum i vreme": "2021-02-03T19:12:35",
+    "Knjige": [],
+    "Akcije": [
+      {
+       "šifra": "326898",
+        "naslov": "Povratak Kralja",
+        "isbn": "978-86-6035-588-3",
+        "autor": "Dž. R. R. Tolkin",
+        "izdavač": "Publik Praktikum",
+        "broj strana": 409,
+        "godina": 1955,
+        "cena": 1440.00,
+        "kategorija": "Fantastika"
+      },
+      {
+        "šifra": "332470",
+        "naslov": "Vatra i Krv",
+        "isbn": "978-86-521-3321-5",
+        "autor": "Džordž R. R. Martin",
+        "izdavač": "Laguna",
+        "broj strana": 539,
+        "godina": 2018,
+        "cena": 1169.10,
+        "kategorija": "Fantastika"
+      },
+      {
+        "šifra": "3318",
+        "naslov": "Kralj Ožiljaka",
+        "isbn": "978-86-89-56581-2",
+        "autor": "Li Bardugo",
+        "izdavač": "Urban Reads",
+        "broj strana": 277,
+        "godina": 2019,
+        "cena": 1100.00,
+        "kategorija": "Fantastika"
+      }
+    ],
+    "Ukupno": 3709.01
+  },
+  {
+    "id": 3,
+    "Prodavac": "random4",
+    "Datum i vreme": "2021-04-02T09:34:45",
+    "Knjige": [
+      {
+      "šifra": "339741",
+    "naslov": "Kudžo",
+    "isbn": "978-86-10-02993-2",
+    "autor": "Stiven King",
+    "izdavač": "Vulkan izdavaštvo",
+    "broj strana": 335,
+    "godina": 1981,
+    "cena": 1490.01,
+    "kategorija": "Horor"
+       },
+      {
+        "šifra": "256714",
+    "naslov": "Slika Dorijana Greja",
+    "isbn": "978-86-10-00558-5",
+    "autor": "Oskar Vajld",
+    "izdavač": "Vulkan izdavaštvo",
+    "broj strana": 254,
+    "godina": 1890,
+    "cena": 899.00,
+    "kategorija": "Klasik"
+      }
+    ],
+    "Akcije": [
+      {
+        "šifra": "335457",
+        "naslov": "Sedam Smrti Ivlin Hardkasl",
+        "isbn": "978-86-10-02730-3",
+        "autor": "Stjuart Terton",
+        "izdavač": "Vulkan izdavaštvo",
+        "broj strana": 362,
+        "godina": 2018,
+        "cena": 539.40,
+        "kategorija": "Triler"
+      }
+    ],
+    "Ukupno": 2928.41
+   }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "artikli": [
+      {
+        "šifra": "326898",
+        "naslov": "Povratak Kralja",
+        "isbn": "978-86-6035-588-3",
+        "autor": "Dž. R. R. Tolkin",
+        "izdavač": "Publik Praktikum",
+        "broj strana": 409,
+        "godina": 1955,
+        "cena": 1440.00,
+        "kategorija": "Fantastika"
+      },
+      {
+        "šifra": "332470",
+        "naslov": "Vatra i Krv",
+        "isbn": "978-86-521-3321-5",
+        "autor": "Džordž R. R. Martin",
+        "izdavač": "Laguna",
+        "broj strana": 539,
+        "godina": 2018,
+        "cena": 1169.10,
+        "kategorija": "Fantastika"
+      },
+      {
+       "šifra": "3318",
+        "naslov": "Kralj Ožiljaka",
+        "isbn": "978-86-89-56581-2",
+        "autor": "Li Bardugo",
+        "izdavač": "Urban Reads",
+        "broj strana": 277,
+        "godina": 2019,
+        "cena": 1100.00,
+        "kategorija": "Fantastika"
+      }
+    ],
+    "datum isteka": "2021-02-19"
+  },
+  {
+    "id": 2,
+    "artikli": [
+      {
+        "šifra": "335457",
+        "naslov": "Sedam Smrti Ivlin Hardkasl",
+        "isbn": "978-86-10-02730-3",
+        "autor": "Stjuart Terton",
+        "izdavač": "Vulkan izdavaštvo",
+        "broj strana": 362,
+        "godina": 2018,
+        "cena": 539.40,
+        "kategorija": "Triler"
+      },
+      {
+        "šifra": "978867",
+        "naslov": "Alijenista",
+        "isbn": "978-86-7436-067-5",
+        "autor": "Kejleb Kar",
+        "izdavač": "Laguna",
+        "broj strana": 587,
+        "godina": 1994,
+        "cena":799.20,
+        "kategorija": "Triler"
+      }
+      ],
+    "datum isteka": "2020-02-19"
+  }
+]
