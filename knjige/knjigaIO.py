@@ -1,13 +1,11 @@
 import json
 
-datoteka = './datoteke/knjige.json'
+path = './datoteke/knjige.json'
 
-
-def sacuvaj_knjige(knjige):
-    with open(datoteka, "w") as f:
-        json.dump(knjige, f)
-
-
-def ucitaj_knjige():
-    with open(datoteka) as f:
+def load ():
+    with open(path) as f:
         return json.load(f)
+
+def save(nove_knjige):
+    with open(path, "w") as f:
+        json.dump(nove_knjige, f, ensure_ascii=False)
