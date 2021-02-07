@@ -291,7 +291,7 @@ def sort():
         ID = input("\nID (input 'Nazad' to return to the main menu):")
         i = 0
         for knjiga in knjige:
-            if knjiga ['ID'] == ID:
+            if knjiga['ID'] == ID:
                 validator = 1
                 print('Knjiga je pronađena.')
                 break
@@ -318,7 +318,162 @@ def sort():
         stare_knjige = [stara_knjiga]
         list(stare_knjige)
 
-## 345
+        Naslov = input('\nPromenite naslov:')
+        if Naslov == '':
+            Naslov = knjige[i]['Naslov']
+        Autor = input('Promenite autora:')
+        if Autor == '':
+            Autor = knjige[i]['Autor']
+        ISBN = input('Promenite ISBN')
+        if ISBN == '':
+            ISBN = knjige[i]['ISBN']
+        Izdavač = input('Promenite izdavača')
+        if Izdavač == '':
+            Izdavač = knjige[i]['Izdavač']
+        try:
+            Godina = int(input('Promenite godinu'))
+        except ValueError:
+            Godina = knjige[i]['Godina']
+        try:
+            Cena = float(input('Promenite cenu'))
+        except ValueError:
+            Cena = knjige[i]['Cena']
+        Kategorija = input('Promenite kategoriju')
+        if Kategorija == '':
+            Kategorija = knjige[i]['Kategorija']
+        try:
+            Broj_strana = int(input('Promenite broj strana'))
+        except ValueError:
+            Broj_strana = knjige[i]['Broj strana']
+
+        stare_knjige = [knjige[z], nova_knjiga]
+        list(stare_knjige)
+        while True:
+            print('\nDa li želite da nastavite?\n1. Da\n2. Ne')
+            option = input('Input:')
+            if option == '1':
+                knjige[z] = nova_knjiga
+                break
+            elif option == '2':
+                return False
+            else:
+                print('Greška, pokušajte ponovo')
+
+        save(knjige)
+        print('%s je dodano u bazu podataka.')
+        return False
+
+    def erase():
+        z = -1
+        i = 0
+        while True:
+            ID = input("\nID (input 'Nazad' to return to the main menu):")
+            if ID == 'Nazad':
+                return False
+            elif ID != '':
+                result = re.search(' ', ID)
+                if result == None:
+                    break
+                else:
+                    print("ID ne može imati prazna mesta, pokušajte ponovo")
+                    if erase() == False:
+                        return False
+            else:
+                print("ID ne može biti prazan, pokušajte ponovo")
+                if erase () == False:
+                    return False
+        for knjiga in knjige:
+            if knjiga['ID'] == ID:
+                print('Knjiga je pronađena')
+                z = i
+                break
+            i += 1
+        if z == -1:
+            print('Knjiga nije pronađena, pokušajte ponovo')
+            if erase () == False:
+                return False
+        obrisane_knjige = [knjige[z]]
+        print('\nKnjiga će biti obrisana')
+        list(obrisane_knjige)
+        while True:
+            print('\nDa li želite da nastavite?\n1. Da\n2. Ne')
+            option = input('Input:')
+            if option == '1':
+                obrisati_knjigu = knjige[z]
+                obrisati_knjigu['Obrisano'] = True
+                break
+            elif option == '2':
+                return False
+            else:
+                print('Greška, pokušajte ponovo')
+
+        save(knjige)
+        print('%s je obrisano iz baze podataka')
+        return False
+
+    def prodati_knjigu():
+        global cart
+        z = -1
+        i = 0
+        while True:
+            ID = input("\nID (input 'Nazad' to return to the main menu):")
+            if ID == 'Nazad':
+                return False
+            elif ID != '':
+                result = re.search(' ', ID)
+                if result == None:
+                    break
+                else:
+                    print("Greška, pokušajte ponovo")
+                    if prodati_knjigu() == False:
+                        return False
+            else:
+                print("Greška, pokušajte ponovo")
+                if prodati_knjigu() == False:
+                    return False
+                else:
+                    return True
+        for knjiga in knjige:
+            if knjiga['ID'] == ID and knjiga['Obrisano'] == False:
+                print('Knjiga je pronađena')
+                z = i
+                break
+            i += 1
+        if z == -1:
+            print('Knjiga nije pronađena, pokušajte ponovo')
+            if prodati_knjigu() == False:
+                return False
+            else:
+                return True
+        cart_item = []
+        while True:
+            q = -1
+            try:
+                q = int(input('Broj:'))
+            except ValueError:
+                pass
+            if q>0:
+                break
+            else:
+                print('Greška, pokušajte ponovo')
+        print('Biće dodani u korpu')
+        for i in range(q):
+            cart_item += [knjige[z]]
+        list(cart_item)
+        while True:
+            print('\nDa li želite da nastavite?\n1. Da\n2. Ne')
+            option = input('Input:')
+            if option == '1':
+                cart[0]["Artikli"] += cart_item
+                return True
+            elif option == '2':
+                return False
+            else:
+                print ('Greška, pokušajte ponovo')
+
+    ##517
+
+
 
 
 
