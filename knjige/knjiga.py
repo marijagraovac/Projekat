@@ -471,7 +471,79 @@ def sort():
             else:
                 print ('Greška, pokušajte ponovo')
 
-    ##517
+    def prodati_akciju():
+        global cart
+        z = -1
+        i = 0
+        while True:
+            ID = input("\nID (input 'Nazad' to return to the shopping menu):")
+            if ID == 'Nazad':
+                return False
+            elif ID != '':
+                result = re.search(' ', ID)
+                i = 0
+                for akcija in akcije:
+                    if (str(akcija['ID']) == ID and akcija['Datum isteka'] > str(date.today())):
+                        print('Akcija pronađena')
+                        z = i
+                        break
+                    i += 1
+            if z == -1:
+                print('Akcija nije pronađena ili je istekla')
+            if z != -1:
+                break
+        cart_item = []
+        print('Artikli će biti dodani u korpu')
+        n = len(akcije[z]['Artikli'])
+        for i in range(n):
+            cart_item += [akcije[z]['Artikli'][i]]
+        list(cart_item)
+        while True:
+            print('\nDa li želite da nastavite?\n1. Da\n2. Ne')
+            option = input('Input:')
+            if option == '1':
+                cart[0]["akcija_knjige"] += cart_item
+                return True
+            elif option == '2':
+                return False
+            else:
+                print('Greška, pokušajte ponovo')
+
+    def napraviti_racun():
+        global total
+        racun = {
+            "ID": 0,
+            "Prodavac": "S",
+            "Datum i vreme": "2021-02-07T19:24:34",
+            "Artikli": [
+                {
+                    "ID": "N/A",
+                    "Naslov": "N/A",
+                    "Autor": "N/A",
+                    "ISBN": "N/A",
+                    "Izdavač": "N/A",
+                    "Godina": 2021,
+                    "Cena": 0.0,
+                    "Kategorija": "N/A",
+                    "Broj strana": 0
+                }
+            ],
+            "akcija_knjige": [
+                {
+                    "ID": "N/A",
+                    "Naslov": "N/A",
+                    "Autor": "N/A",
+                    "ISBN": "N/A",
+                    "Izdavač": "N/A",
+                    "Godina": 2021,
+                    "Cena": 0.0,
+                    "Kategorija": "N/A",
+                    "Broj strana": 0
+                }
+            ],
+            "Ukupno": 0.0
+        }
+    ##590
 
 
 
