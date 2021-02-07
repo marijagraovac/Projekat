@@ -3,7 +3,7 @@
     "id": 1,
     "artikli": [
       {
-        "šifra": "326898",
+        "ID": "326898",
         "naslov": "Povratak Kralja",
         "isbn": "978-86-6035-588-3",
         "autor": "Dž. R. R. Tolkin",
@@ -14,7 +14,7 @@
         "kategorija": "Fantastika"
       },
       {
-        "šifra": "332470",
+        "ID": "332470",
         "naslov": "Vatra i Krv",
         "isbn": "978-86-521-3321-5",
         "autor": "Džordž R. R. Martin",
@@ -25,7 +25,7 @@
         "kategorija": "Fantastika"
       },
       {
-       "šifra": "3318",
+       "ID": "3318",
         "naslov": "Kralj Ožiljaka",
         "isbn": "978-86-89-56581-2",
         "autor": "Li Bardugo",
@@ -42,7 +42,7 @@
     "id": 2,
     "artikli": [
       {
-        "šifra": "335457",
+        "ID": "335457",
         "naslov": "Sedam Smrti Ivlin Hardkasl",
         "isbn": "978-86-10-02730-3",
         "autor": "Stjuart Terton",
@@ -53,7 +53,7 @@
         "kategorija": "Triler"
       },
       {
-        "šifra": "978867",
+        "ID": "978867",
         "naslov": "Alijenista",
         "isbn": "978-86-7436-067-5",
         "autor": "Kejleb Kar",

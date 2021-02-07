@@ -1,6 +1,6 @@
 [
   {
-    "šifra": "326898",
+    "ID": "326898",
     "naslov": "Povratak Kralja",
     "isbn": "978-86-6035-588-3",
     "autor": "Dž. R. R. Tolkin",
@@ -11,7 +11,7 @@
     "kategorija": "Fantastika"
   },
   {
-    "šifra": "276387",
+    "ID": "276387",
     "naslov": "Ime Ruže",
     "isbn": "978-86-10-01213-2",
     "autor": "Umberto Eko",
@@ -22,7 +22,7 @@
     "kategorija": "Misterija"
   },
   {
-    "šifra": "332470",
+    "ID": "332470",
     "naslov": "Vatra i Krv",
     "isbn": "978-86-521-3321-5",
     "autor": "Džordž R. R. Martin",
@@ -33,7 +33,7 @@
     "kategorija": "Fantastika"
   },
   {
-    "šifra": "339741",
+    "ID": "339741",
     "naslov": "Kudžo",
     "isbn": "978-86-10-02993-2",
     "autor": "Stiven King",
@@ -44,7 +44,7 @@
     "kategorija": "Horor"
   },
   {
-    "šifra": "256714",
+    "ID": "256714",
     "naslov": "Slika Dorijana Greja",
     "isbn": "978-86-10-00558-5",
     "autor": "Oskar Vajld",
@@ -55,7 +55,7 @@
     "kategorija": "Klasik"
   },
   {
-    "šifra": "335457",
+    "ID": "335457",
     "naslov": "Sedam Smrti Ivlin Hardkasl",
     "isbn": "978-86-10-02730-3",
     "autor": "Stjuart Terton",
@@ -66,7 +66,7 @@
     "kategorija": "Triler"
   },
   {
-    "šifra": "3318",
+    "ID": "3318",
     "naslov": "Kralj Ožiljaka",
     "isbn": "978-86-89-56581-2",
     "autor": "Li Bardugo",
@@ -77,7 +77,7 @@
     "kategorija": "Fantastika"
   },
   {
-    "šifra": "978867",
+    "ID": "978867",
     "naslov": "Alijenista",
     "isbn": "978-86-7436-067-5",
     "autor": "Kejleb Kar",
@@ -88,7 +88,7 @@
     "kategorija": "Triler"
   },
   {
-    "šifra": "978865",
+    "ID": "978865",
     "naslov": "Američki Bogovi",
     "isbn": "978-86-521-2580-7",
     "autor": "Nil Gejmen",
