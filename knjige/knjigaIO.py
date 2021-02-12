@@ -8,4 +8,4 @@ def load ():
 
 def save(nove_knjige):
     with open(path, "w") as f:
-        json.dump(nove_knjige, f, ensure_ascii=False)
+        json.dump(nove_knjige, f)
