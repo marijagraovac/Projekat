@@ -543,7 +543,115 @@ def sort():
             ],
             "Ukupno": 0.0
         }
-    ##590
+        stari_racuni = lista_racuna.load()
+        z = 0
+        for racun in stari_racuni:
+            z += 1
+        racun['ID'] = z
+        racun['Prodavac'] = korisnik.get_korisnicko_ime()
+        racun['date_time'] = date.time.now().isoformat()
+        racun['Artikli'] = cart[0]['Artikli']
+        racun['Akcije'] = cart[0]['Akcije_knjige']
+        racun['Ukupno'] = total
+        return racun
+
+    def sell_complete():
+        racuni = lista_racuna.load()
+        racun = napraviti_racun()
+        try:
+            print('\nSledeće knjige će biti prodane:')
+            list(cart[0]["Artikli"])
+        except IndexError:
+            pass
+        try:
+            print('\nSledeće akcije će biti prodane:')
+            list(cart[0]["Akcija_knjige"])
+        except IndexError:
+            pass
+        while True:
+            print('\nDa li želite da nastavite?\n1. Da\n2. Ne')
+            option = input('Input:')
+            if option == '1':
+                if total != 0:
+                    racuni.append(racun)
+                break
+            elif option == '2':
+                return True
+            else:
+                print('Greška, pokušajte ponovo')
+        lista_racuna.save(racuni)
+        if total != 0:
+            print('Knjige su prodate.')
+            mracun.print_table(racun)
+        else:
+            print('Korpa je bila prazna')
+            return False
+
+    def sell_menu():
+        global cart
+        global total
+        while True:
+            total = 0.0
+            for item in cart[0]["Artikli"]:
+                total += item["Cena"]
+            for item in cart[0]["Akcija knjige"]:
+                total += item["Cena"]
+            print('\nProdati:')
+            print('1. Knjige')
+            print('2. Akcije')
+            print('3. Prikazati korpu')
+            print('4. Završiti')
+            print('5. Povratak na glavni meni')
+            option = input('Izaberite opciju:')
+            if option == '1':
+                if prodati_knjigu() == True:
+                    print('Dodano u korpu:')
+                else:
+                    print('Nije dodano u korpu.')
+                    if sell_menu() == False:
+                        return False
+            elif option == '2':
+                if prodati_akciju() == True:
+                    print('Dodano u korpu:')
+                else:
+                    print('Nije dodano u korpu')
+                    if sell_menu() == False:
+                        return False
+            elif option == '3':
+                try:
+                    list(cart[0]["Artikli"])
+                except IndexError:
+                    pass
+                try:
+                    list(cart[0]["Akcija knjige"])
+                except IndexError:
+                    pass
+                print('\nUkupno:', total)
+            elif option == '4':
+                if sell_complete() == True:
+                    pass
+                else:
+                    return False
+            elif option == '5':
+                return False
+            else:
+                print('Greška, pokušajte ponovo')
+
+    def sell():
+        global cart
+        cart_keys = {
+            "Artikli": [],
+            "Akcija_knjige": []
+        }
+        cart = [cart_keys]
+        if sell_menu() == False:
+            return False
+
+
+
+
+
+
 
 
 
