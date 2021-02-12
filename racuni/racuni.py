@@ -1,5 +1,5 @@
 from beautifultable import BeautifulTable
-from racuni.lista_racuna import load
+from lista_racuna import load
 import re
 
 racuni = load()
@@ -53,7 +53,7 @@ def print_cene(racun):
     return string
 
 def print_table(racun):
-    table = BeautifulTable
+    table = BeautifulTable()
     table.maxwidth = 300
     table.rows.append([racun['ID'], racun['Prodavac'], racun['date_time'], print_articles(racun), print_cene(racun), racun['total']])
     table.columns.header = ["ID", "Prodavac", "Vreme", "Artikli", "Nove cene", "Ukupno"]

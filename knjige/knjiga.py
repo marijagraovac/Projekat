@@ -3,7 +3,7 @@ from akcije import akcije
 from datetime import date, datetime
 from korisnici import korisnik
 from racuni import lista_racuna
-from racuni import racun as mracun
+from racuni import racuni as mracun
 import re
 
 type = 'neutral'
@@ -237,6 +237,8 @@ def sort():
         Autor = input('Autor:')
         ISBN = input('ISBN')
         Izdavač = input('Izdavač:')
+        Kategorija = input('Kategorija:')
+        Broj_strana = input('Broj strana:')
         while True:
             try:
                 Godina = int(input('Godina:'))
@@ -286,7 +288,7 @@ def sort():
         print('%s je dodano u bazu podataka.')
         return False
 
-    def edit():
+    def edit(nova_knjiga=''):
         validator = 0
         ID = input("\nID (input 'Nazad' to return to the main menu):")
         i = 0

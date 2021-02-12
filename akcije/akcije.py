@@ -1,7 +1,6 @@
-import sys
-sys.path.insert(0, '')
 
-from akcijeIO import load, save
+from beautifultable import BeautifulTable
+from akcije.akcija_lista import load, save
 from datetime import date
 from knjige import knjiga
 import re
@@ -39,7 +38,8 @@ def print_cene(akcije):
         i += 1
     return string
 
-def table_create(akcije, show_valid, table=None):
+def table_create(akcije, show_valid):
+    table = BeautifulTable()
     table.maxwidth=300
     for akcija in akcije:
         if(akcija['datum isteka']>str(date.today()) or show_valid == False):
