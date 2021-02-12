@@ -1,5 +1,5 @@
 from beautifultable import BeautifulTable
-from lista_racuna import load
+from racuni.lista_racuna import load
 import re
 
 racuni = load()
